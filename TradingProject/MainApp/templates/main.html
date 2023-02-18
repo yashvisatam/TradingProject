@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingProject</title>
+</head>
+<body>
+    <center>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="csv_file">CSV file:</label>
+            <input type="file" name="csv_file" id="csv_file"><br>
+            <br>
+            <label for="timeframe">Timeframe:</label>
+            <input type="number" name="timeframe" id="timeframe"><br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>
